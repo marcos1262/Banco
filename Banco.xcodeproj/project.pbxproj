@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BEE76DE4203AF9DE001F863C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE76DE3203AF9DE001F863C /* main.m */; };
+		BEE76DEC203AFA4C001F863C /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE76DEB203AFA4C001F863C /* Account.m */; };
+		BEE76DEF203AFA62001F863C /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE76DEE203AFA62001F863C /* Client.m */; };
+		BEE76DF2203AFAAA001F863C /* Bank.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE76DF1203AFAAA001F863C /* Bank.m */; };
+		BEE76DF5203B0B0F001F863C /* History.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE76DF4203B0B0F001F863C /* History.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		BEE76DE0203AF9DE001F863C /* Banco */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Banco; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE76DE3203AF9DE001F863C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEE76DEA203AFA4C001F863C /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		BEE76DEB203AFA4C001F863C /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		BEE76DED203AFA62001F863C /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		BEE76DEE203AFA62001F863C /* Client.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		BEE76DF0203AFAAA001F863C /* Bank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bank.h; sourceTree = "<group>"; };
+		BEE76DF1203AFAAA001F863C /* Bank.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bank.m; sourceTree = "<group>"; };
+		BEE76DF3203B0B0F001F863C /* History.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = History.h; sourceTree = "<group>"; };
+		BEE76DF4203B0B0F001F863C /* History.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = History.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,7 @@
 				BEE76DE1203AF9DE001F863C /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		BEE76DE1203AF9DE001F863C /* Products */ = {
 			isa = PBXGroup;
@@ -58,6 +71,14 @@
 			isa = PBXGroup;
 			children = (
 				BEE76DE3203AF9DE001F863C /* main.m */,
+				BEE76DEA203AFA4C001F863C /* Account.h */,
+				BEE76DEB203AFA4C001F863C /* Account.m */,
+				BEE76DED203AFA62001F863C /* Client.h */,
+				BEE76DEE203AFA62001F863C /* Client.m */,
+				BEE76DF0203AFAAA001F863C /* Bank.h */,
+				BEE76DF1203AFAAA001F863C /* Bank.m */,
+				BEE76DF3203B0B0F001F863C /* History.h */,
+				BEE76DF4203B0B0F001F863C /* History.m */,
 			);
 			path = Banco;
 			sourceTree = "<group>";
@@ -119,7 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE76DF2203AFAAA001F863C /* Bank.m in Sources */,
+				BEE76DF5203B0B0F001F863C /* History.m in Sources */,
 				BEE76DE4203AF9DE001F863C /* main.m in Sources */,
+				BEE76DEF203AFA62001F863C /* Client.m in Sources */,
+				BEE76DEC203AFA4C001F863C /* Account.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89JG34L8Z2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89JG34L8Z2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
