@@ -21,7 +21,7 @@ typedef enum {
 @property Account* account;
 @property NSMutableArray<History*> *report;
 
--(void)initSession:(Account*)account;
+-(void)startSession:(Account*)account;
 -(void)endSession;
 
 -(void)cashout:(int)value withError:(NSError**)error;

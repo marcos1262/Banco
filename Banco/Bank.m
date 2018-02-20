@@ -14,7 +14,7 @@
 {
 	self = [super init];
 	if (self) {
-		_notes = {0,0,0,0};
+		_notes = [NSArray arrayWithObjects: [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], nil];
 		_report = [[NSMutableArray alloc] init];
 	}
 	return self;
@@ -41,14 +41,14 @@
 		return;
 	}
 	_account.balance -= value;
-	
+// TODO save history
 }
 -(void)deposit:(int)value{
-	
+	_account.balance += value;
 }
 
 -(NSString*)getNotesAsString{
-	
+	return [NSString stringWithFormat:@"Notes: 100->%@, 50->%@, 20->%@, 10->%@", _notes[_100], _notes[_50], _notes[_20], _notes[_10]];
 }
 
 @end
