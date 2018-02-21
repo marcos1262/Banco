@@ -11,13 +11,14 @@
 #import "History.h"
 
 typedef enum {
-	_10, _20, _50, _100
+	_100, _50, _20, _10
 } Notes;
 
 
 @interface Bank : NSObject
 
-@property NSArray<NSNumber*> *notes;
+@property NSArray<NSNumber*> *notesValues;
+@property NSMutableArray<NSNumber*> *notes;
 @property Account* account;
 @property NSMutableArray<History*> *report;
 
